@@ -18,12 +18,10 @@ generateButton.addEventListener 'click', (e) ->
     lengthInput.value == ''
   )
     return
-
   # Generating new password generator and passing values to it
   length = lengthInput.value
   wantSpecialChars = specialCharactersInput.checked
-  generator = new PasswordGenerator lengthInput, wantSpecialChars
-
+  generator = new PasswordGenerator length, wantSpecialChars
   # generating and adding value to output element
   outputInput.value = generator.generate()
 
