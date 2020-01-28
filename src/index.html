@@ -32,13 +32,17 @@
         <div class="form">
           <div class="length">
             <label for="length">Length :</label>
-            <input type="number" name="length" id="length">
+            <input type="number"
+              name="length"
+              id="length"
+              value="5">
           </div>
           <div class="special_characters">
             <input type="checkbox"
               name="special_characters"
               id="special_characters">
-            <label for="special_characters">
+            <label for="special_characters"
+              title="Includes: !, @, #, $, %, ^, &, *, (, ), - and +.">
               Add Special Characters
             </label>
           </div>
@@ -55,7 +59,6 @@
           <input type="text"
             name="generated_password"
             id="generated_password"
-            disabled="true"
             placeholder="Generate your Password">
 
           <!-- copy svg -->
