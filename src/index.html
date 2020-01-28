@@ -8,7 +8,66 @@
     <link rel="stylesheet" href="./scss/app.scss">
   </head>
   <body>
-    <h1>Hello World 🌎!</h1>
+    <!-- Main -->
+    <main>
+      <!-- Hero Image -->
+      <div class="img">
+        <img src="./img/hero.png" alt="Image of Vault">
+      </div>
+
+      <!-- Hero Text area -->
+      <div class="text">
+        <h1>Password Generator</h1>
+        <p class="kicker">
+          Create strong passwords for your website. This is an open source project created by
+          <a href="https://github.com/harshPPatel"
+            target="_blank">harshPPatel</a>
+        </p>
+
+        <!-- Form -->
+        <div class="form">
+          <div class="length">
+            <label for="length">Length :</label>
+            <input type="number" name="length" id="length">
+          </div>
+          <div class="special_characters">
+            <input type="checkbox"
+              name="special_characters"
+              id="special_characters">
+            <label for="special_characters">
+              Add Special Characters
+            </label>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="btn-container">
+          <button id="generate-button">Generate</button>
+        </div>
+
+        <!-- Output -->
+        <div class="output">
+          <!-- Output Input -->
+          <input type="text"
+            name="generated_password"
+            id="generated_password"
+            disabled="true">
+
+          <!-- copy svg -->
+          <a href="" id="copy">
+            <svg viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7143 0H3.57144C2.00001 0 0.714294 1.26818 0.714294 2.81818V22.5455H3.57144V2.81818H20.7143V0ZM25 5.63636H9.28572C7.71429 5.63636 6.42858 6.90455 6.42858 8.45455V28.1818C6.42858 29.7318 7.71429 31 9.28572 31H25C26.5714 31 27.8571 29.7318 27.8571 28.1818V8.45455C27.8571 6.90455 26.5714 5.63636 25 5.63636ZM25 28.1818H9.28572V8.45455H25V28.1818Z" fill="#006D63"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Checkout the project on
+        <a href="https://github.com/harshPPatel/password-generator"
+          target="_blank">GitHub</a>
+        ❤️</p>
+    </footer>
   </body>
-  <script src="./js/app.js"></script>
+  <script src="./coffee/app.coffee"></script>
 </html>
