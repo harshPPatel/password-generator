@@ -1,0 +1,26 @@
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 103%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 14px;
+    width: 14px;
+    background-color: $primary-color;
+    border-radius: 20px;
+  }
+}
+
+.kicker {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(#000, 0.7);
+  margin: 20px 0 40px;
+  line-height: 160%;
+}

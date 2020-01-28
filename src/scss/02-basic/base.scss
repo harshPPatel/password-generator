@@ -1,0 +1,29 @@
+body {
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  position: relative;
+}
+
+main,
+footer {
+  width: 100%;
+  max-width: $container-width;
+}
+
+a {
+  color: inherit;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}

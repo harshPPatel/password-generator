@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+
+  label {
+    font-size: 20px;
+
+    &[for='length'] {
+      margin-right: 8px;
+    }
+
+    &[for='special_characters'] {
+      margin-left: 8px;
+      cursor: pointer;
+    }
+  }
+
+  #length {
+    height: 40px;
+    width: 60px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba($primary-color, 0.1);
+    border-bottom: 3px solid rgba($primary-color, 0.4);
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+
+  #special_characters {
+    transform: scale(1.5);
+  }
+
+  .length {
+    margin-right: 20px;
+  }
+}

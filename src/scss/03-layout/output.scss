@@ -1,0 +1,34 @@
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  input {
+    text-align: center;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 16px 5px;
+    border-bottom: 1px solid $primary-dark-color;
+
+    &::placeholder {
+      font-weight: 300;
+      color: rgba($primary-dark-color, 0.5);
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    margin-top: 16px;
+
+    svg {
+      height: 32px;
+      width: auto;
+    }
+  }
+}
